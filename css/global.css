@@ -1,0 +1,577 @@
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(../images/body-bg.jpg);
+	background-color: #4a4d4a;
+	font-family: 'Raleway', 'Lato', Arial, sans-serif;
+	font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', 'Lato', Arial, sans-serif;
+}
+
+
+
+/* Typography */
+h1 {
+	font-size: 3em;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	font-size: 2.4em;
+	margin: 0 0 15px 0;
+}
+
+h3 {
+	font-size: 2em;
+	margin: 0 0 15px 0;
+}
+
+h4 {
+	font-size: 1.6em;
+	margin: 0 0 15px 0;
+}
+
+h5 {
+	font-size: 1.6em;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 1.4em;
+	margin: 0 0 15px 0;
+	font-weight: bold;
+}
+
+blockquote {
+	border-left: #3f3f3f 7px solid;
+	border-right: #d8d8d8 1px solid;
+	border-top: #d8d8d8 1px solid;
+	border-bottom: #d8d8d8 1px solid;
+	background: #fff;
+	padding: 20px;
+	margin: 0 0 20px 0;
+	color: #777;
+	font-style: italic;
+}
+
+blockquote p {
+	margin: 0 !important;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+/*********************************************************************
+Start Header */
+#header-wrapper {
+	background: #634056;
+	border-bottom: #000 1px solid;
+}
+
+#top-bar {
+	border-bottom: #634056 1px solid;
+	min-height: 55px;
+}
+
+#top-bar-inner {
+	max-width: 97.667em;
+	margin: 0 auto;
+}
+
+/* Search Bar by http://www.paulund.co.uk/create-a-slide-out-search-box*/
+.search_form input[type=text]
+{
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 15px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	width:200px;
+	float: left;
+	
+	min-height: 38px;
+	padding: 4px 20px 4px 8px;
+	font-size: 1.2em;
+	
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.search_form input[type=text]:focus
+{
+	width: 400px;
+	border-color: #51a7e8;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);
+	outline: none;
+}
+/* Search Bar by http://www.paulund.co.uk/create-a-slide-out-search-box*/
+
+.topbar-right {
+	position: relative;
+	float: right;
+	padding: 0 110px 0 0;
+}
+
+.submenu,
+.topbar-right ul {
+	float: left;
+	margin: 11px 0;
+}
+
+.submenu,
+.topbar-right ul li {
+	float: left;
+	margin: 0 15px 0 0;
+	font-weight: 600;
+	font-size: 1.6em;
+}
+
+.submenu,
+.topbar-right ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 2px;
+}
+
+
+.log-out {
+	height: 40px;
+	position: absolute;
+	right: -10px;
+	top: 10px;
+	color: #fff;
+	padding: 10px 0 1px 10px;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.log-out p {
+	font-size: 1.2em;
+	min-height: 16px;
+	text-align: left;
+	padding: 0 24px 0 0;
+	float: left;
+}
+
+.log-out p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.full-shadow {
+	background: url(../images/full-shadow.png) repeat-x center;
+	height: 7px;
+}
+
+.login-user {
+	height: 40px;
+	float: left;
+	right: 0;
+	top: 10px;
+	color: #fff;
+	padding: 10px 0 1px 15px;
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+
+/* END Header */
+
+
+/* ***********************************************************************************
+	* ***********************************************************************************
+	* Dashboard  Start 
+*/
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.main {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.main {
+	max-width: 97.667em;
+	min-height: 40em;
+}
+
+
+
+/* Breadcrumb */
+.bread {
+	margin-top: 0;
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid black;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 10px ;
+	margin-bottom: 15px;
+}
+
+.dash {
+	margin-top: 15em;
+}
+
+.bread > h3 {
+	margin-bottom: 0;
+	font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #383837;
+	
+	display: inline-block;
+}
+
+
+/* Widget */
+.widget-content {
+	background:#E9E9E9;
+	background:-moz-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #e9e9e9));
+	background:-webkit-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+	
+	float: left;
+	margin:0 20px 10px 0;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+}
+
+.small-widget {
+	width: 40%;
+	height: 428px;
+}
+
+.wide-widget {
+	width: 57.8%;
+}
+
+.full-widget {
+	width: 100%;
+	background:#E9E9E9;
+	background:-moz-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #e9e9e9));
+	background:-webkit-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	background:linear-gradient(top, #fafafa 0%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+	
+	float: left;
+	margin:0 20px 10px 0;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	
+	font-size: 1.4em;
+}
+
+
+.widget-content ul {
+	margin: 11px 50px 8px 0;
+}
+
+
+.widget-content ul li {
+	
+	margin: 11px 15px 0 15px;
+	font-weight: 600;
+	font-size: 2.7em;
+	
+	/* Styles */
+    background: #634056;
+    background: -moz-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -ms-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -o-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(99,64,86,0.5)), to(rgba(76,49,65,0.7)));
+    background: -webkit-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));    
+    border-radius: 5px;
+    border: 1px solid #4e3043;
+    box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	
+    /* Font styles */
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+	padding: 15px;
+}
+
+.widget-content ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 2px;
+}
+
+
+.widget-content:first-child { margin-left: 0 !important; }
+.widget-content:last-child { margin-right: 0 !important; }
+
+/* Dashboard finished 
+	********************************************************************************************
+	********************************************************************************************
+*/
+
+.submenu {
+	position: relative;
+	float: right;
+}
+
+.submenu ul {
+	float: left;
+	margin: 1px 0;
+}
+
+.submenu ul li {
+	float: left;
+	margin: 0 15px 0 0;
+	font-weight: 800;
+	font-size: 0.8em;
+	padding: 5px;
+	border-radius: 2px;
+	background: #634056;
+	
+}
+
+.submenu ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px;
+}
+
+.submenu li:nth-child(2n+1) {
+    margin-left : 0;
+}
+
+.submenu li:nth-child(2n) {
+    margin-right : -15px;
+}
+
+
+#add {
+	background: green;
+}
+
+#del {
+	background: #b20;
+	margin-left: 30px;
+	margin-right: -15px;
+}
+
+#back {
+	margin-right: -15px;
+}
+
+/* Demo 4 */
+
+.form-4 {
+    /* Size and position */
+    width: 70%;
+    margin: 30px auto 30px;
+    padding: 10px;
+    position: relative;
+	
+    /* Font styles */
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #383837;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+	
+}
+
+.form-4 h1 {
+    font-size: 22px;
+	padding-top: -20px;
+    padding-bottom: 20px;
+}
+
+.form-4 textarea,
+.form-4 select,
+.form-4 input[type=text],
+.form-4 input[type=number],
+.form-4 input[type=password] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 4px 8px 10px;
+    margin-bottom: 15px;
+	
+    /* Styles */
+    border: 1px solid #4e3043; /* Fallback */
+    border: 1px solid rgba(78,48,67, 0.8);
+    background: rgba(0,0,0,0.15);
+    border-radius: 2px;
+    box-shadow: 
+	0 1px 0 rgba(255,255,255,0.2), 
+	inset 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	
+    /* Font styles */
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #383837;
+    font-size: 13px;
+	font-weight: 800;
+}
+
+/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
+
+.form-4 input::-webkit-input-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-4 input:-moz-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-4 input:-ms-input-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-4 textarea,
+.form-4 select,
+.form-4 input[type=text]:hover,
+.form-4 input[type=number]:hover,
+.form-4 input[type=password]:hover {
+    border-color: #333;
+}
+
+.form-4 textarea,
+.form-4 select,
+.form-4 input[type=text]:focus,
+.form-4 input[type=password]:focus,
+.form-4 input[type=submit]:focus {
+    box-shadow: 
+	0 1px 0 rgba(255,255,255,0.2), 
+	inset 0 1px 1px rgba(0,0,0,0.1),
+	0 0 0 3px rgba(255,255,255,0.15);
+    outline: none;
+}
+
+/* Fallback */
+.no-boxshadow .form-4 input[type=text]:focus,
+.no-boxshadow .form-4 input[type=number]:focus,
+.no-boxshadow .form-4 input[type=password]:focus {
+    outline: 1px solid white;
+}
+
+.form-4 input[type=submit] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 5px;
+    
+    /* Styles */
+    background: #634056;
+    background: -moz-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -ms-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -o-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(99,64,86,0.5)), to(rgba(76,49,65,0.7)));
+    background: -webkit-linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    background: linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));    
+    border-radius: 5px;
+    border: 1px solid #4e3043;
+    box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	
+    /* Font styles */
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+}
+
+.form-4 input[type=submit]:hover {
+    box-shadow: 
+	inset 0 1px rgba(255,255,255,0.2), 
+	inset 0 20px 30px rgba(99,64,86,0.5);
+}
+
+/* Fallback */
+.no-boxshadow .form-4 input[type=submit]:hover {
+    background: #594642;
+}
+
+.form-4 label {
+    display: none;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+}
+
+.form-4 label:hover ~ input {
+    border-color: #333;
+}
+
+.no-placeholder .form-4 label {
+    display: block;
+}
+
+.form-4 input[type=number]::-webkit-inner-spin-button, 
+.form-4 input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+
+.form-4 input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#msg {
+	color: #4C0000;
+	font-size: 1.2em;
+	font-weight: 800;
+	text-align: center;
+}
+
+.form-4 option {
+	background: #fff;
+	
+	 /* Font styles */
+	font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #383837;
+    font-size: 13px;
+	font-weight: 800;
+}
+
+.small input[type=text] {
+	width: 50px;
+}
+
+.form-4 textarea {
+	resize: none;
+}
